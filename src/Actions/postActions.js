@@ -1,9 +1,11 @@
 import { DELETE_DATA, FETCH_DATA, UPDATE_DATA } from "./types";
 
 export const getData = (setError) => (dispatch) => {
-  const data = localStorage.getItem("data");
-  const post = JSON.parse(localStorage.getItem("data"));
-  if (data && post.lenght !== 0) {
+  var data = JSON.parse(localStorage.getItem("data"));
+  var arrayLength = data.length;
+
+  console.log(arrayLength);
+  if (data && arrayLength !== 0) {
     const data = JSON.parse(localStorage.getItem("data"));
 
     console.log(data);
