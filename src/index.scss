@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #e0e0e0;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
-.navbar{
+.navbar {
   background-color: white;
   padding: 10px 20px;
   display: flex;
@@ -21,34 +21,27 @@ body{
   align-content: center;
   align-self: center;
 
-  .button{
+  .button {
     border: 3px solid blue;
     border-radius: 15px;
-    #btns{
+    #btns {
       font-size: 18px;
       padding: 10px;
       background-color: white;
       border: none;
-      font-family: 'Roboto Slab', serif;
+      font-family: "Roboto Slab", serif;
       border-radius: 15px;
-      &:nth-child(1){
+      &:nth-child(1) {
         border-right: 3px solid blue;
-        
       }
-
     }
   }
-
-  
-
-
-
 }
 
-.button>.active{
-    padding: 20px;
-  }
-.flex{
+.button > .active {
+  padding: 20px;
+}
+.flex {
   width: 100%;
   padding: 20px auto;
   display: flex;
@@ -57,54 +50,49 @@ body{
   align-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  
 
-  
+  .card {
+    max-width: 100vw;
+    width: 450px;
+    margin: 10px auto;
+    position: relative;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px 20px;
+    background: white;
+    border-top: 5px solid blue;
+    box-shadow: 5px 5px 3px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    font-family: "Roboto Condensed", sans-serif;
 
-  .card{
-  width: 450px;
-  margin: 10px;
-  position: relative;
-  border: 2px solid #e0e0e0;
-  border-radius: 20px;
-  padding: 30px 20px;
-  background: white;
-  border-top: 5px solid blue ;
-  box-shadow:  5px 5px 3px 5px rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 20px;
-  font-family: 'Roboto Condensed', sans-serif;
-  
-.card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: center;
-  align-self: center;
-  
-}
-}
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-content: center;
+      align-self: center;
+    }
+  }
 }
 
-
-
-.grey{
+.grey {
   color: gray;
   margin-right: 10px;
   font-weight: lighter;
 }
 
-.space{
+.space {
   padding-bottom: 5px;
 }
 
-img{
+img {
   border-radius: 10px;
 }
 
-.cardId{
+.cardId {
   background-color: honeydew;
   border: 1px solid blue;
   text-align: center;
@@ -114,7 +102,7 @@ img{
   padding: 20px;
   font-size: 25px;
   font-weight: bolder;
-  position:absolute;
+  position: absolute;
   top: 10px;
   margin-left: 10px;
   display: flex;
@@ -124,7 +112,7 @@ img{
   align-self: center;
 }
 
-.edit_delete{
+.edit_delete {
   width: 50px;
   display: flex;
   padding: 10px;
@@ -138,7 +126,7 @@ img{
   right: -25px;
 }
 
-.edit{
+.edit {
   background-color: green;
   color: white;
   font-size: 25px;
@@ -147,8 +135,7 @@ img{
   border-radius: 50%;
 }
 
-
-.delete{
+.delete {
   background-color: red;
   color: white;
   font-size: 25px;
@@ -157,7 +144,7 @@ img{
   border-radius: 50%;
 }
 
-.btn{
+.btn {
   color: white;
   background-color: green;
   border: none;
@@ -165,10 +152,9 @@ img{
   margin: 10px auto;
   font-size: 19px;
   border-radius: 10px;
-
 }
 
-.input{
+.input {
   border: 2px solid black;
   padding: 10px;
   border-radius: 10px;

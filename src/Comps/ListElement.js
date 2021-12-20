@@ -4,12 +4,12 @@ import ReadOnlytField from "./ReadOnlytField";
 import { useDispatch } from "react-redux";
 import { delete_data } from "../Actions/postActions";
 
-function ListElement({ user, setdata, data }) {
+function ListElement({ user, setdata, data, setMessage }) {
   const dispatch = useDispatch();
   const [editIsClicked, setEditIsClicked] = useState(false);
   function HandleDelete() {
     console.log(user);
-    dispatch(delete_data(data, user.id));
+    dispatch(delete_data(data, user.id, setMessage));
   }
 
   function HandleEdit() {
